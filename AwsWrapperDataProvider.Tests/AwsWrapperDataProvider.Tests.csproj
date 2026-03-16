@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -10,18 +10,18 @@
     </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AWSSDK.EC2" Version="4.0.71" />
-    <PackageReference Include="AWSSDK.RDS" Version="4.0.15.2" />
+    <PackageReference Include="AWSSDK.EC2" Version="4.0.80" />
+    <PackageReference Include="AWSSDK.RDS" Version="4.0.18.3" />
     <PackageReference Include="coverlet.collector" Version="6.0.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="DbMocker" Version="1.26.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.3.0" />
     <PackageReference Include="Moq" Version="4.20.72" />
-    <PackageReference Include="NPOI" Version="2.7.5" />
+    <PackageReference Include="NPOI" Version="2.7.6" />
     <PackageReference Include="ToxiproxyNetCore" Version="1.0.50" />
-    <PackageReference Include="xunit.v3" Version="3.2.1" />
+    <PackageReference Include="xunit.v3" Version="3.2.2" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -35,6 +35,7 @@
     <ProjectReference Include="..\AwsWrapperDataProvider.Dialect.MySqlConnector\AwsWrapperDataProvider.Dialect.MySqlConnector.csproj" />
     <ProjectReference Include="..\AwsWrapperDataProvider.Dialect.MySqlClient\AwsWrapperDataProvider.Dialect.MySqlClient.csproj" />
     <ProjectReference Include="..\AwsWrapperDataProvider.Dialect.Npgsql\AwsWrapperDataProvider.Dialect.Npgsql.csproj" />
+    <ProjectReference Include="..\AwsWrapperDataProvider.Plugin.CustomEndpoint\AwsWrapperDataProvider.Plugin.CustomEndpoint.csproj" />
     <ProjectReference Include="..\AwsWrapperDataProvider\AwsWrapperDataProvider.csproj" />
   </ItemGroup>
 
@@ -45,10 +46,6 @@
     <ItemGroup>
         <Folder Include="Driver\Plugins\Failover\" />
         <Folder Include="Driver\Plugins\Limitless\" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\AwsWrapperDataProvider\AwsWrapperDataProvider.csproj" />
     </ItemGroup>
 
 </Project>
